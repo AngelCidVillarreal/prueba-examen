@@ -1,0 +1,32 @@
+Crear una página web con el título "COMPUTER CENTER".Debajo del título, agregar el subtítulo:
+"Diseña y configura tu propia computadora personal de videojuegos"
+Crear un formulario donde el usuario pueda elegir los componentes de su computadora.Agregar una sección de Gabinete utilizando una lista desplegable (<select>) con las siguientes opciones:
+Minitorre — $700
+Torre — $1200
+Desktop — $550
+Gamer — $2500
+Agregar una sección de Procesador utilizando también un <select> con estas opciones:
+Celeron — $900
+Intel i3 — $1500
+Intel i5 — $3500
+Intel i7 — $5000
+Agregar una sección de Disco Duro con estas opciones en una lista desplegable:
+500GB — $500
+750GB — $800
+1TB — $1000
+250 GB SSD — $900
+500 GB SSD — $1380
+Agregar una sección de Memoria RAM también con lista desplegable:
+4 GB — $600
+8 GB — $1050
+16 GB — $1950
+Agregar una sección de Monitor usando un comboBox (<select>) con al menos 6 tamaños posibles:
+17"
+19"
+21.5"
+24"
+27"
+32"
+Agregar una sección de Accesorios con 20 checkboxes, donde el usuario pueda elegir múltiples artículos adicionales. Por ejemplo:
+Mouse, Teclado, Bocinas, Webcam, UPS, Alfombrilla, Control Gamer, Luz RGB, Silla Gamer, Adaptador WiFi, Hub USB, Audífonos, Monitor adicional, Soporte, Ventilador, Micrófono, Lector SD, Cable HDMI, Base refrigerante, Caja de herramientas.
+Agregar al final del formulario un botón Enviar o Calcular Total para procesar la selección del usuario.Al final que tenga la siguiente etiqueta Elaborado por: [Tu Nombre] · Proyecto de Formulario · © 2025
