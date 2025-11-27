@@ -17,6 +17,25 @@
         text-align: center;
         color: aqua;
     }
+    form{
+        text-align: center;
+    }
+        .accesorios-grid {
+            color: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+        .accesorios-grid label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        .accesorios-grid input[type="checkbox"] {
+            margin-right: 8px;
+            width: auto;
+        }
 </style>
 <body>
     <H1>Computer center</H1>
@@ -26,24 +45,83 @@
         <div>
             <label for="gabinete">Gabinete</label>
             <select id="gabinete" name="gabinete" required>
+                <option value="">Seleccione un tamaño</option>
                 <option value="Minitorre">Minitorre — $700</option>
                 <option value="Torre">Torre — $1200</option>
                 <option value="Desktop">Desktop — $550</option>
                 <option value="Gamer">Gamer — $2500</option>
             </select>
-        </div>
-    </form>
-     <h2>procesador</h2>  
-    <form action="checkbox"></form>  
+        </div>  
         <div>
             <label for="procesador"></label>
             <select name="prosesador" id="prosesador">
+            <option value="">Seleccione un tamaño</option>
             <option value="Celeron">Celeron-$900</option>
             <option value="intel i3">intel i3-$1500</option>
             <option value="Celeron i5">intel i5-3500</option>
             <option value="Celeron i7">intel i7-$5000</option>
             </select>
         </div>
+        <div>
+            <label for="disco_duro">Disco Duro</label>
+            <select id="disco_duro" name="disco_duro" required>
+                <option value="">Seleccione una opción</option>
+                <option value="500GB">500GB — $500</option>
+                <option value="750GB">750GB — $800</option>
+                <option value="1TB">1TB — $1000</option>
+                <option value="250GB_SSD">250 GB SSD — $900</option>
+                <option value="500GB_SSD">500 GB SSD — $1380</option>
+            </select>
+        </div>
+              <div>
+            <label for="memoria_ram">Memoria RAM</label>
+            <select id="memoria_ram" name="memoria_ram" required>
+                <option value="">Seleccione una opción</option>
+                <option value="4GB">4 GB — $600</option>
+                <option value="8GB">8 GB — $1050</option>
+                <option value="16GB">16 GB — $1950</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="monitor">Monitor</label>
+            <select id="monitor" name="monitor">
+                <option value="">Seleccione un tamaño</option>
+                <option value="17">17"</option>
+                <option value="19">19"</option>
+                <option value="21.5">21.5"</option>
+                <option value="24">24"</option>
+                <option value="27">27"</option>
+                <option value="32">32"</option>
+            </select>
+        </div>
+        <div>
+            <label>Accesorios</label>
+            <div class="accesorios-grid">
+                <label><input type="checkbox" name="accesorio[]" value="Mouse"> Mouse</label>
+                <label><input type="checkbox" name="accesorio[]" value="Teclado"> Teclado</label>
+                <label><input type="checkbox" name="accesorio[]" value="Bocinas"> Bocinas</label>
+                <label><input type="checkbox" name="accesorio[]" value="Webcam"> Webcam</label>
+                <label><input type="checkbox" name="accesorio[]" value="UPS"> UPS</label>
+                <label><input type="checkbox" name="accesorio[]" value="Alfombrilla"> Alfombrilla</label>
+                <label><input type="checkbox" name="accesorio[]" value="Control_Gamer"> Control Gamer</label>
+                <label><input type="checkbox" name="accesorio[]" value="Luz_RGB"> Luz RGB</label>
+                <label><input type="checkbox" name="accesorio[]" value="Silla_Gamer"> Silla Gamer</label>
+                <label><input type="checkbox" name="accesorio[]" value="Adaptador_WiFi"> Adaptador WiFi</label>
+                <label><input type="checkbox" name="accesorio[]" value="Hub_USB"> Hub USB</label>
+                <label><input type="checkbox" name="accesorio[]" value="Audifonos"> Audífonos</label>
+                <label><input type="checkbox" name="accesorio[]" value="Monitor_adicional"> Monitor adicional</label>
+                <label><input type="checkbox" name="accesorio[]" value="Soporte"> Soporte</label>
+                <label><input type="checkbox" name="accesorio[]" value="Ventilador"> Ventilador</label>
+                <label><input type="checkbox" name="accesorio[]" value="Microfono"> Micrófono</label>
+                <label><input type="checkbox" name="accesorio[]" value="Lector_SD"> Lector SD</label>
+                <label><input type="checkbox" name="accesorio[]" value="Cable_HDMI"> Cable HDMI</label>
+                <label><input type="checkbox" name="accesorio[]" value="Base_refrigerante"> Base refrigerante</label>
+                <label><input type="checkbox" name="accesorio[]" value="Caja_herramientas"> Caja de herramientas</label>
+            </div>
+        </div>
+
+    </form>    
 
 </body>
 </html>
